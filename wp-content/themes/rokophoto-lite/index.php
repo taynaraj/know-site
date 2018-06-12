@@ -17,6 +17,12 @@ get_header(); ?>
 	<!-- Blog Posts
 	================================================== -->
 	<?php get_sidebar(); ?>
+
+	
+	<div class="backgroundDigital featuredClients">
+		<h2>Clientes</h2>
+		<?php echo do_shortcode("[logo_carousel_slider]"); ?>
+	</div>
 	<div class="blog">
 		<div class="container">
 			<div class="row">

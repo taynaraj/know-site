@@ -14,11 +14,13 @@ Text Domain: rokophoto
 /***********************
 ******* General ********
 ***********************/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('css/animation.css');
 
 body {
 	overflow: hidden;
 	color: #536d76;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Raleway";
 	font-size: 1em;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased !important;
@@ -46,7 +48,7 @@ html {
 }
 
 p {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Raleway";
 	font-size: 14px;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 1.75;
@@ -55,7 +57,7 @@ p {
 p.large {
 	margin-bottom: -10px;
 	padding-top: 40px;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 2px;
@@ -64,7 +66,7 @@ p.large {
 p.small {
 	margin-top: -10px;
 	margin-bottom: -10px;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 12px;
 	font-weight: 300;
 	letter-spacing: 2px;
@@ -74,7 +76,7 @@ p.atext {
 	left: 0;
 	width: 60%;
 	padding-top: 20px;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 12px;
 	font-weight: 300;
 	letter-spacing: 2px;
@@ -107,41 +109,43 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 h1 {
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 76px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
-	letter-spacing: 5px;
 	text-transform: uppercase;
 }
 
 h2 {
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
-	font-size: 30px;
-	font-weight: 500;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
+	font-size: 3.1rem;
 	-webkit-font-smoothing: antialiased !important;
-	letter-spacing: 5px;
-	text-transform: uppercase;
+	text-transform: none;
+    text-align: center;
+    font-weight: 800;
+    color: #474b4a;
+
 }
 
 h4 {
 	/*margin-bottom: -10px;*/
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 500;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 800;
 	-webkit-font-smoothing: antialiased !important;
-	line-height: 20px;
 	text-transform: none;
+	padding: 30px;
+	line-height: 32px;
 }
 
 h5 {
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased !important;
@@ -151,7 +155,7 @@ h5 {
 }
 
 h6 {
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 10px;
 	font-weight: 600;
 	-webkit-font-smoothing: antialiased !important;
@@ -270,9 +274,10 @@ pre {
 	top: 15%;
 	left: 0;
 	width: 100%;
-	height: 400px;
+	height: 200px;
 	/* centers the loading animation vertically one the screen */
 	background-image: url(img/loading.gif);
+	background-size: 150px;
 	/* path to your loading animation */
 	background-repeat: no-repeat;
 	background-position: center;
@@ -400,7 +405,7 @@ pre {
 .pirate_forms_thankyou_wrap p,
 .pirate_forms_error_box p {
 	margin: 0;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 1em;
 	letter-spacing: 1px;
 }
@@ -496,10 +501,15 @@ pre {
 	content: '';
     position: absolute;
     height: 6rem;
-    background-color: #474b4a;
+
     width: 100%;
     top: 2rem;
 }
+.navbar-default.navbar-shrink .align-vertical:before{
+	background-color: #474b4a;
+	
+}
+.navbar-default.navbar-shrink .nav li a{color:#fff;padding-top: 25px;}
 @media (min-width: 768px) {
 	.align-vertical {
 		display: table;
@@ -517,7 +527,8 @@ pre {
 	.menu-container {
 		display: table-cell;
 		float: none;
-		vertical-align: middle;
+		vertical-align: top;
+		padding-top: 10px;
 	}
 }
 
@@ -549,20 +560,30 @@ pre {
 }
 
 .navbar-default .nav li a {
-	color: #fff;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
-	font-size: 12px;
-	font-weight: 500;
+	color: #000;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 800;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
 	outline: 0;
 	color: #fed136;
-}
 
+}
+.navbar-default .nav li a:hover:before{
+	height: 3px;
+    width: 40%;
+    content: '';
+    bottom: 7px;
+    position: absolute;
+    background:  #fed136;
+    background-size: 600% 600%;
+    transform:.8s;
+}
 .navbar-default .navbar-nav > .active > a {
 	border-radius: 0;
 	color: #fec503;
@@ -577,7 +598,6 @@ pre {
 
 @media (min-width:768px) {
 	.navbar-default {
-		padding: 25px 0;
 		border: 0;
 		background-color: transparent;
 		-webkit-transition: padding 0.3s;
@@ -795,20 +815,19 @@ pre {
 }
 
 .vision {
-	color: #fff;
-	text-align: center;
+	color: #F7941E;
 }
 
 .vision-border a,
 .vision-border a:hover {
-	color: #fff;
+	color: #F7941E;
 	text-decoration: none;
 }
 
 .vision-border:hover > h2,
 .vision-border:hover {
-	border-color: #fec503;
-	color: #fec503;
+	border-color: #F7941E;
+	color: #F7941E;
 	-webkit-transition: all 1s;
 	transition: all 1s;
 }
@@ -818,14 +837,14 @@ pre {
 	color: #fff;
 }
 
-.vision div.vision-border {
-	padding: 20px 90px;
-}
+
 
 .vision-border {
-	width: 40%;
-	padding: 5px 10px;
-	border: 2px solid #fff;
+	width: 55%;
+	color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    padding: .3rem 0;
 }
 
 .centered {
@@ -851,12 +870,20 @@ pre {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+.featuredClients{
+	background-image:url(img/digital-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	clear: left;
+	height: 44vh;
+	padding-top: 2rem;
+}
 .dark-overlay {
 	height: 630px;
-	padding-top: 255px;
-	color: #fff;
-	background: rgba(0, 0, 0, 0.7);
+	padding-top: 22%;
+	color: #F7941E;
+	background-color:rgba(255,255,255,0.2);
+	text-shadow: 1px 1px 2px rgb(169, 166, 163);
 }
 
 .blog {
@@ -996,7 +1023,7 @@ pre {
 
 #bsocials p {
 	color: #fff;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	-webkit-font-smoothing: antialiased !important;
 	letter-spacing: 2px;
 	text-transform: none;
@@ -1007,7 +1034,7 @@ pre {
 	padding: 5px;
 	border: 1px solid #fff;
 	color: #fff;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 30px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -1198,7 +1225,7 @@ a.btn.pull-right:hover {
 	border-radius: 0;
 	color: #000;
 	background: transparent;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 10px;
@@ -1300,7 +1327,7 @@ a.btn.pull-right:hover {
 	border-radius: 0;
 	color: #000;
 	background: none repeat scroll 0 0 transparent;
-	font-family: "Open Sans","Trebuchet MS",Arial,sans-serif;
+	font-family: "Raleway","Trebuchet MS",Arial,sans-serif;
 	font-size: 16px;
 	line-height: 1;
 	white-space: pre-wrap;
@@ -1369,7 +1396,7 @@ a.btn.pull-right:hover {
 h2.widgettitle {
 	float: left;
 	width: 100%;
-	font-family: "Open Sans","Trebuchet MS",Arial,sans-serif;
+	font-family: "Raleway","Trebuchet MS",Arial,sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -1410,7 +1437,7 @@ h2.widgettitle {
 	color: #fff;
 	background-color: #000;
 	background-image: none;
-	font-family: "Open Sans","Trebuchet MS",Arial,sans-serif;
+	font-family: "Raleway","Trebuchet MS",Arial,sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 1.42857143;
@@ -1803,7 +1830,7 @@ figure.effect-portfolio:hover img {
 	border-radius: 0;
 	color: #fff;
 	background-color: #000;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	letter-spacing: 2px;
@@ -1851,7 +1878,7 @@ figure.effect-portfolio:hover img {
 	margin-top: 0;
 	margin-bottom: 30px;
 	color: #000;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 10px;
 	letter-spacing: 2px;
@@ -1916,7 +1943,7 @@ figure.effect-portfolio:hover img {
 #subscribe p {
 	display: inline-block;
 	margin-top: 27px;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	-webkit-font-smoothing: antialiased !important;
 	vertical-align: middle;
 	letter-spacing: 2px;
@@ -1936,7 +1963,7 @@ figure.effect-portfolio:hover img {
 	border: 1px solid #fff;
 	border-radius: 0;
 	color: #fff;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 30px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -1975,7 +2002,7 @@ figure.effect-portfolio:hover img {
 	width: 400px;
 	padding: 20px;
 	border: 2px solid #fff;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 44px;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 30px;
@@ -1997,7 +2024,7 @@ figure.effect-portfolio:hover img {
 
 #socials p {
 	color: #000;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	-webkit-font-smoothing: antialiased !important;
 	letter-spacing: 2px;
 	text-transform: none;
@@ -2008,7 +2035,7 @@ figure.effect-portfolio:hover img {
 	padding: 5px;
 	border: 1px solid #000;
 	color: #000;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 30px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -2088,7 +2115,7 @@ footer {
 	padding: 20px;
 	border: 2px solid #fff;
 	color: #fff;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 46px;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 30px;
@@ -2104,7 +2131,7 @@ footer {
 
 #footer p {
 	color: #fff;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 10px;
 	letter-spacing: 2px;
@@ -2118,7 +2145,7 @@ footer {
 	padding-top: 45px;
 	color: #fff;
 	background-color: #161616;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 10px;
 	text-align: center;
 	letter-spacing: 2px;
@@ -2141,7 +2168,7 @@ footer {
 	border-radius: 0;
 	color: #fff;
 	background: transparent;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 1;
@@ -2199,7 +2226,7 @@ footer {
 	border-radius: 0;
 	color: #fec503;
 	background-color: rgba(242, 222, 222, 0);
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-weight: lighter;
 	letter-spacing: 1px;
 }
@@ -2214,7 +2241,7 @@ footer {
 	border-radius: 0;
 	color: #000;
 	background-color: #fff;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	letter-spacing: 1px;
 }
 
@@ -2231,7 +2258,7 @@ footer {
 	border-radius: 0;
 	color: #080808;
 	background: transparent;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 14px;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 10px;
@@ -2274,7 +2301,7 @@ footer {
 	border-radius: 0;
 	color: #fec503;
 	background: none;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	-webkit-font-smoothing: antialiased !important;
@@ -2288,7 +2315,7 @@ footer {
 	margin: 50px auto;
 	padding: 20px;
 	border: 2px solid #000;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 30px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -2429,7 +2456,7 @@ footer {
 
 .woocommerce div.product .product_title {
 	color: #000;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 30px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -2460,7 +2487,7 @@ footer {
 	border-radius: 0;
 	color: #000;
 	background: none;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 28px;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 16px;
@@ -2484,7 +2511,7 @@ footer {
 	border-radius: 0;
 	color: #000;
 	background: none;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 28px;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 16px;
@@ -2521,7 +2548,7 @@ footer {
 	border: 2px solid #000;
 	border-bottom: none;
 	border-radius: 0;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -2692,7 +2719,7 @@ footer {
 	border-radius: 0;
 	color: #000;
 	background: none repeat scroll 0 0 transparent;
-	font-family: "Open Sans","Trebuchet MS",Arial,sans-serif;
+	font-family: "Raleway","Trebuchet MS",Arial,sans-serif;
 	font-size: 16px;
 	line-height: 10px;
 	text-transform: uppercase;
@@ -2876,7 +2903,7 @@ footer {
 	border-radius: 0;
 	color: #000;
 	background: none;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -2926,7 +2953,7 @@ footer {
 	border-radius: 0;
 	color: #000;
 	background: none;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -2984,7 +3011,7 @@ footer {
 	border-radius: 0;
 	color: #000;
 	background: none;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -3027,7 +3054,7 @@ footer {
 
 .woocommerce .woocommerce-billing-fields h3,
 .woocommerce h3.order_review_heading {
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -3040,7 +3067,7 @@ footer {
 }
 
 .woocommerce-checkout .checkout .col-2 h3#ship-to-different-address label {
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -3053,7 +3080,7 @@ footer {
 .woocommerce-account .woocommerce h2,
 .woocommerce-account .addresses .title h3 {
 	margin-top: 50px;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased !important;
@@ -3118,7 +3145,7 @@ footer {
 	border-radius: 0;
 	color: #FFFFFF;
 	background: #000000;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased !important;
 	line-height: 10px;
@@ -3404,7 +3431,7 @@ footer {
 }
 footer *{
 	text-align:left;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 }
 .footerLogo {
 	display: block;
@@ -3418,7 +3445,7 @@ footer *{
 
 .footerTxt > p {
 	margin: 0;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 }
 
 .footerTxt {
@@ -3446,7 +3473,7 @@ footer *{
 	width: 32px;
 	-webkit-transition: .4s;
 	transition: .4s;
-	font-family: "Open Sans", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 }
 .footerLinkIcon a:hover{
 	background-color: #a0a0a0;

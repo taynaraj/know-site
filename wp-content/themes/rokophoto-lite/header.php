@@ -84,9 +84,10 @@
 	================================================== -->
 	<section id="blog" style="background-image: url('<?php header_image(); ?>');">
 	<div class="dark-overlay vision">
+		<div class="container">
 		<div class="centered vision-border wow bounceIn">
 			
-			<h2><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
+			<!--<h2><a href="<php echo esc_url( home_url( '/' ) ); ?>"><php bloginfo( 'name' ); ?></a></h2>!-->
 			<?php
 			$subheadtitle = get_theme_mod( 'rokophotolite_subhead_title', __( 'Welcome to', 'rokophoto-lite' ) );
 			if ( ! empty( $subheadtitle ) ) {
@@ -94,6 +95,7 @@
 			}
 			?>
 			<?/*php get_template_part( 'loop-meta' ); */?>
+		</div>
 		</div>
 	</div>
 </section>
