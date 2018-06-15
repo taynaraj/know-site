@@ -20,6 +20,8 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', 'C:\xampp\htdocs\know-site\wp-content\plugins\wp-super-cache/' );
 define('DB_NAME', 'know_site');
 
 /** Usuário do banco de dados MySQL */

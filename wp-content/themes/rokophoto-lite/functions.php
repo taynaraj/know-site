@@ -590,3 +590,8 @@ if ( file_exists( get_template_directory() . '/class-tgm-plugin-activation.php' 
 
 	add_action( 'tgmpa_register', 'rokophoto_register_required_plugins' );
 }
+
+add_action( 'init', 'bl_excerpts_pages' );
+function bl_excerpts_pages() {
+  add_post_type_support( 'page', 'excerpt' );
+}

@@ -7,6 +7,7 @@ h2.lcs_logo_carousel_slider_title {
 
 .lcs_logo_container {
     margin: 6px;
+    
 }
 
 .lcs_logo_container a {
@@ -23,7 +24,9 @@ h2.lcs_logo_carousel_slider_title {
 }
 
 .lcs_logo_container img {
-    box-shadow: none;
+    -webkit-box-shadow:2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:2px 2px 5px 0px rgba(0, 0, 0, 0.2);
     display: block;
     margin: 0 auto;
     border-radius: 0;

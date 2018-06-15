@@ -18,7 +18,7 @@ if ( ( isset( $rokophoto_social_display_settings ) && $rokophoto_social_display_
 <!-- About Section
 ================================================== -->
 
-<footer class="wow bounceIn animated" style="opacity: 1;">
+<footer class="footerPrincipal wow bounceIn animated" style="opacity: 1;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">

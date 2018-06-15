@@ -128,16 +128,27 @@ h2 {
 	-webkit-font-smoothing: antialiased !important;
 	text-transform: none;
     text-align: center;
-    font-weight: 800;
-    color: #474b4a;
+    font-weight: 600;
+	color: #474b4a;
+	position: relative;
 
 }
-
+h2:before{
+	content: '';
+    background-color: #474b4a;
+    height: 2px;
+    width: 5%;
+    bottom: -2px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
 h4 {
 	/*margin-bottom: -10px;*/
 	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 30px;
-	font-weight: 800;
+	font-weight: 600;
 	-webkit-font-smoothing: antialiased !important;
 	text-transform: none;
 	padding: 30px;
@@ -450,7 +461,9 @@ pre {
 .navbar-default.navbar-shrink ul ul {
 	background-color: #222;
 }
-
+.navbar-default.navbar-shrink.main-navigation a svg{
+	height:5rem;
+}
 .navbar-default {
 	border-color: transparent;
 	background-color: #222;
@@ -500,16 +513,19 @@ pre {
 .align-vertical:before{
 	content: '';
     position: absolute;
-    height: 6rem;
-
+    height: 6.4rem;
     width: 100%;
-    top: 2rem;
 }
 .navbar-default.navbar-shrink .align-vertical:before{
-	background-color: #474b4a;
+	background-color: #F7941E;
 	
 }
-.navbar-default.navbar-shrink .nav li a{color:#fff;padding-top: 25px;}
+.navbar-default.navbar-shrink .background-logo{display: none;}
+.navbar-default.navbar-shrink .navbar-brand{padding: 5px 15px;}
+.navbar-default.navbar-shrink{padding:0;}
+.navbar-default.navbar-shrink > .container{}
+
+.navbar-default.navbar-shrink .nav li a{color:#fff;padding-top: 15px;}
 @media (min-width: 768px) {
 	.align-vertical {
 		display: table;
@@ -563,7 +579,7 @@ pre {
 	color: #000;
 	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-size: 20px;
-	font-weight: 800;
+	font-weight: 600;
 	letter-spacing: 2px;
 	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
@@ -571,7 +587,7 @@ pre {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
 	outline: 0;
-	color: #fed136;
+	color: #000;
 
 }
 .navbar-default .nav li a:hover:before{
@@ -580,7 +596,7 @@ pre {
     content: '';
     bottom: 7px;
     position: absolute;
-    background:  #fed136;
+    background:  #000;
     background-size: 600% 600%;
     transform:.8s;
 }
@@ -609,7 +625,7 @@ pre {
 	}
 
 	.navbar-default.navbar-shrink {
-		padding: 10px 0;
+		padding: 0 0;
 		/*background-color: #222;*/
 	}
 
@@ -869,14 +885,37 @@ pre {
 	height: 630px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
-.featuredClients{
+.backgroundDigital{
 	background-image:url(img/digital-bg.jpg);
+}
+.backgroundDepoimentos{
+	background-image:url(img/depoimentos.jpg);
+}
+.backgroundContato{
+	background-image:url(img/contato.jpg);
+}
+.backgroundFeatured{
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	color: #fff;
+	height: 30rem;
+    justify-content: center;
+    align-items: center;
+}
+.backgroundFeatured h2{
+	color:#fff
+}
+.backgroundFeatured h2:before{
+	background-color:#fff
+}
+.featuredClients{
+	
 	clear: left;
-	height: 44vh;
-	padding-top: 2rem;
+	padding:5rem 0;
 }
 .dark-overlay {
 	height: 630px;
@@ -1621,7 +1660,7 @@ h2.widgettitle {
 }
 
 .grid figure h2 span {
-	font-weight: 800;
+	font-weight: 600;
 }
 
 .grid figure h2,
@@ -2095,7 +2134,7 @@ ol.social {
 /**************************
 ***** Footer Section ******
 **************************/
-footer {
+.footerPrincipal {
 	height: auto;
 	min-height: 320px;
 	max-height: 1000px;
@@ -3583,4 +3622,169 @@ ul.footerLink li{text-align:left;}
   content: "\f06a ";
   font-family: fontawesome;
   margin-right: 5px;
+}
+
+/* Destaques páginas */
+.featured-page{
+	padding: 5rem 0;
+}
+.featured-line .item-left{
+	position: relative;
+}
+.featured-line svg{
+	width: 11rem
+}
+.featured-line a:hover svg{
+	width: 14rem;
+	transition:.3s
+}
+.featured-line .item-left,
+.featured-line .item-right{
+	height: 32rem;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.featured-line h3{
+	text-transform: none;
+	font-weight: 400;
+	font-size: 25px;
+	width: 85%;
+	margin:auto;
+}
+.featured-line p{
+	width: 85%;
+	margin:auto;
+	font-size: 16px;
+}
+.featured-line a:hover{
+	text-decoration: none;
+
+}
+.featured-line .item-graph{
+	-webkit-box-shadow: 1px 1px 13px 1px rgba(26, 26, 26, 0.075);
+    box-shadow: 1px 1px 13px 1px rgba(26, 26, 26, 0.075);
+    border-radius: 100%;
+    padding: 5rem;
+}
+.featured-line .item-left:before{
+	content: '';
+    position: absolute;
+    width: 2px;
+    border-right: 3px dotted #ddd;
+    height: 100%;
+    right: 0;
+}
+.featured-line .item-right p,
+.featured-line .item-right h3{
+	text-align: left;
+}
+.featured-line .item-left p,
+.featured-line .item-left h3{
+	text-align: right;
+}
+
+/* Depoimentos */
+.sldr_title{
+	display: none;
+}
+.bx-wrapper blockquote{
+	float: left;
+	width: 80%;
+	border:0;
+}
+.tslider blockquote footer:before{
+	content:'';
+}
+.bx-wrapper .bx-prev{
+	background-position: 0 0!important;
+}
+.bx-wrapper .bx-prev:hover{
+	background-position: 0 0!important;
+}
+.bx-wrapper .bx-next{
+	background-position: -43px 0!important;
+}
+.bx-wrapper .bx-next:hover{
+	background-position: -43px 0!important;
+}
+.footer-testimonial{
+	font-size: 1.5em;
+    color: #47a3da;
+	text-align: right;
+	clear: left;
+	margin-right: 45px;
+}
+
+.tslider .footer-testimonial:before {
+	content: '― ';
+}
+
+/* Formulário de Contato */
+.faleConosco form{
+	padding: 5rem 0;
+}
+.faleConosco form input{
+	border:0px;
+	border-bottom:1px solid #dadada;
+	padding: 10px;
+	box-shadow: 0 0 0;
+	border-radius:0;
+	width: 100%;
+}
+.faleConosco form input:focus,.faleConosco form textarea:focus{
+	background-color: #f3f3f3;
+	padding: 10px;
+	box-shadow: 0 0 0;
+	outline: 0;
+}
+.faleConosco textarea{
+	resize:none;
+	border:1px solid #dadada;
+	width: 100%;
+}
+.faleConosco label{
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: left
+}
+.faleConosco .wpcf7-submit{
+	width: auto;
+    padding: 15px 20px;
+	border-radius: 5px;
+	background-color: #F7941E;
+}
+.faleConosco .wpcf7-submit:hover{
+	background-color: #474b4a;
+	transition: .5s;
+}
+.faleConosco h3{
+	text-transform: none;
+	margin:3rem 0 2rem 0;
+}
+.faleConosco p{
+	text-align: left;
+	padding-top: 20px;
+	font-size: 18px;
+}
+.faleConosco p a:hover{
+	text-decoration: none;
+}
+
+/* Classes apoio */
+.right{
+	float:right;
+}
+.left{
+	float: left;
+}
+.center{
+	text-align:center;
+}
+.marginAuto{
+	margin:auto;
 }
