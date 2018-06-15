@@ -497,14 +497,14 @@ class WPCF7_ContactForm {
 			'class' => trim( $class ),
 			'role' => trim( $role ),
 		);
-
+		$output = apply_filters( 'wpcf7_form_response_output',
+		$output, $class, $content, $this );
 		$atts = wpcf7_format_atts( $atts );
 
 		$output = sprintf( '<div %1$s>%2$s</div>',
 			$atts, esc_html( $content ) );
 
-		$output = apply_filters( 'wpcf7_form_response_output',
-			$output, $class, $content, $this );
+		
 
 		$this->responses_count += 1;
 

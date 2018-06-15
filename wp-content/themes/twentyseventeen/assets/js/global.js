@@ -13,7 +13,7 @@
 		$sidebar = $body.find( '#secondary' ),
 		$entryContent = $body.find( '.entry-content' ),
 		$formatQuote = $body.find( '.format-quote blockquote' ),
-		isFrontPage = $body.hasClass( 'twentyseventeen-front-page' ) || $body.hasClass( 'home blog' ),
+		isFrontPage = $body.hasClass( 'twentyseventeen-front-page' ) || $body.hasClass( 'home' ),
 		navigationFixedClass = 'site-navigation-fixed',
 		navigationHeight,
 		navigationOuterHeight,
