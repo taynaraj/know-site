@@ -30,11 +30,11 @@ get_header(); ?>
              <?php while(have_posts())  : the_post(); ?>
                
 			<div class="row featured-line">
-				<div class="col-xs-6 item-left">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 item-left">
 			
 				<a href="<?php the_permalink(); ?>" class="item-graph"> <?php the_post_thumbnail(); ?></a>
 			</div>
-			<div class="col-xs-6 item-right">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 item-right">
 				<div>
 			 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><br />
 			 <p><?php the_excerpt(); ?></div>
@@ -51,13 +51,13 @@ get_header(); ?>
              <?php while(have_posts())  : the_post(); ?>
                
 			<div class="row featured-line">
-				<div class="col-xs-6 item-left">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  item-left">
 				<div>
 			 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><br />
 			 <p><?php the_excerpt(); ?></div>
 				
 			</div>
-			<div class="col-xs-6 item-right">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  item-right">
 			<a href="<?php the_permalink(); ?>" class="item-graph"> <?php the_post_thumbnail(); ?></a>
 </div>
            
@@ -72,11 +72,11 @@ get_header(); ?>
              <?php while(have_posts())  : the_post(); ?>
                
 			<div class="row featured-line">
-				<div class="col-xs-6 item-left">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 item-left">
 			
 				<a href="<?php the_permalink(); ?>" class="item-graph"> <?php the_post_thumbnail(); ?></a>
 			</div>
-			<div class="col-xs-6 item-right">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 item-right">
 				<div>
 			 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><br />
 			 <p><?php the_excerpt(); ?></div>
@@ -103,8 +103,15 @@ get_header(); ?>
 		
 	</div>
 	<div class="featuredClients">
-		
+		<div class="row">
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+			<p class="center">
+			A <strong>Know Solutions</strong> atende clientes de todo o Brasil. Abaixo, você confere as principais empresas* que se beneficiam com as soluções de <strong>Business Intelligence (BI)</strong> propostas pela nossa equipe.</p>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 			<?php echo do_shortcode("[logo_carousel_slider]"); ?>
+</div>
+</div>
 		
 		
 	</div>
@@ -153,7 +160,35 @@ Avenida Geremário Dantas, 807. 9º andar, Sala 809.<br /> Bairro: Pechincha</p>
 
 </div>
 
+<div class="backgroundFeatured backgroundBlog">
+<div class="container">
+	<h2>Destaques Blog</h2>
+</div>
+</div>
+<div class="destaques">
+	<div class="container">
+			<div class="row">
+				
+				<?php query_posts ('cat=4&showposts=3'); if(have_posts()) : ?>
+				<?php while(have_posts())  : the_post(); ?>
+               
+			
+				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+				<a href="<?php the_permalink(); ?>">
+					<div><?php the_post_thumbnail(); ?></div>
+					<h3><?php the_title(); ?></h3><br />
+					<?php the_excerpt(); ?>
+				</a>
+				</div>
+			 
+				<?php endwhile; endif;?>
+			</div>
+			
+	</div>
+</div></div></div>
 
+
+</div>
 </div>
 </div>
 <?php

@@ -332,6 +332,7 @@ pre {
 	z-index: 99999;
 	left: -999em;
 	text-align: left;
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .main-navigation ul ul ul {
@@ -342,6 +343,7 @@ pre {
 .main-navigation ul ul a {
 	width: 200px;
 	padding: 5px 14px;
+	color:#fff;
 }
 
 .main-navigation ul li:hover > ul {
@@ -429,6 +431,7 @@ pre {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
+		background: #F7941E;
 	}
 
 	.main-navigation ul {
@@ -438,6 +441,20 @@ pre {
 
 	.main-navigation ul li {
 		width: 100%;
+		border-bottom:1px solid #000;
+
+	}
+	.main-navigation ul li:hover{
+		background-color:#474B4A;
+	}
+	.navbar-default .nav li a:hover, .navbar-default .nav li a:focus{
+		color:#fff!important
+	}
+	.navbar-default .nav li a:hover:before{
+		content:none!important;
+	}
+	.navbar-default .sub-menu a{
+		text-transform: none!important;
 	}
 
 	.main-navigation ul ul,
@@ -448,6 +465,10 @@ pre {
 		padding-left: 20px;
 		text-align: left;
 	}
+	
+	.main-navigation ul ul li{
+		border-bottom:0;
+	}
 
 	.main-navigation ul ul a {
 		width: auto !important;
@@ -456,19 +477,41 @@ pre {
 	.main-navigation ul ul li:hover > ul {
 		left: auto;
 	}
+	.featured-line .item-left:before{
+		content:none!important;
+	}
+	.featured-line{
+		position: relative;
+		margin:auto;
+		width:90%;
+	}
+	.featured-line:before{
+		content:'';
+		position: absolute;
+		width: 100%;
+		height:2px;
+		border-bottom:3px dotted #ddd;
+		bottom:0;
+	}
+	.featured-line:last-of-type:before{
+		content:none!important;
+	}
+	.featured-line .item-left p,.featured-line .item-right p,
+	.featured-line .item-left h3,
+	.featured-line .item-right h3{text-align:center!important;}
+
 }
 
 .navbar-default.navbar-shrink ul ul {
-	background-color: #222;
+	background-color: #F7941E;
+}
+.navbar-default.navbar-shrink ul ul.sub-menu a{
+	text-transform: none;
 }
 .navbar-default.navbar-shrink.main-navigation a svg{
 	height:5rem;
 }
-.navbar-default {
-	border-color: transparent;
-	background-color: #222;
-	text-align: center;
-}
+
 
 .navbar-default .navbar-brand img {
 	max-width: 100%;
@@ -508,7 +551,11 @@ pre {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #fff;
+	background-color: #777;
+}
+.navbar-default{
+	background-color: transparent;
+	border:0;
 }
 .align-vertical:before{
 	content: '';
@@ -583,13 +630,21 @@ pre {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
-
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
 	outline: 0;
 	color: #4e4e4e;
 
 }
+.navbar-default .nav li li a{
+	color:#fff;
+	text-transform: none;
+}
+.navbar-default .nav li li a:hover,
+.navbar-default .nav li li a:focus{
+	color:#fff;
+}
+
 .navbar-default .nav li a:hover:before{
 	height: 2px;
     width: 30%;
@@ -599,6 +654,10 @@ pre {
     background:  #1a1a1a;
     background-size: 600% 600%;
     transform:.8s;
+}
+.navbar-default .nav li li a:hover:before{
+	background: #fff;
+	bottom:-3px;
 }
 .navbar-default .navbar-nav > .active > a {
 	border-radius: 0;
@@ -896,6 +955,9 @@ pre {
 .backgroundContato{
 	background-image:url(img/contato.jpg);
 }
+.backgroundBlog{
+	background-image:url(img/blog.jpg);
+}
 .backgroundFeatured{
 	background-size: cover;
 	background-position: center;
@@ -915,6 +977,12 @@ pre {
 .featuredClients{
 	clear: left;
 	padding:5rem 0 7rem 0;
+
+}
+.featuredClients p{
+	margin:3rem auto;
+	font-size: 18px;
+	width: 70%;
 }
 .dark-overlay {
 	height: 630px;
@@ -3285,6 +3353,17 @@ section#contact .text-danger {
 	color: #fec503;
 }
 
+.destaques img{
+	height: 200px!important;
+	width: auto !important;
+}
+.destaques{
+	padding: 5rem 0;
+}
+.destaques a:hover{
+	text-decoration: none;
+}
+
 @media (min-width: 768px) {
 	#container {
 		width: 750px;
@@ -3733,7 +3812,7 @@ ul.footerLink li{text-align:left;}
 	border-radius:0;
 	width: 100%;
 }
-.faleConosco form input:focus,.faleConosco form textarea:focus{
+.faleConosco form input[type='text']:focus,.faleConosco form textarea:focus{
 	background-color: #f3f3f3;
 	padding: 10px;
 	box-shadow: 0 0 0;
@@ -3773,7 +3852,10 @@ ul.footerLink li{text-align:left;}
 .faleConosco p a:hover{
 	text-decoration: none;
 }
-
+div.wpcf7-response-output{
+	padding: 2em 1em;
+	font-size: 15px;
+}
 /* Classes apoio */
 .right{
 	float:right;
