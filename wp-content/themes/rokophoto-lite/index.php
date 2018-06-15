@@ -136,12 +136,12 @@ get_header(); ?>
 		<div class="row">
 			
 
-			<div class="col-xs-6">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 <?php echo do_shortcode("[contact-form-7 id='85' title='Fale Conosco']"); ?>
 </div>
-<div class="col-xs-6">
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 	<h3>Onde Estamos</h3>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.5233101719464!2d-43.35515018562433!3d-22.93094684449718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd84664c98739%3A0x48058057305130ce!2sAv.+Gerem%C3%A1rio+Dantas%2C+807+-+Pechincha%2C+Rio+de+Janeiro+-+RJ%2C+22743-011!5e0!3m2!1spt-PT!2sbr!4v1529071546782" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.5233101719464!2d-43.35515018562433!3d-22.93094684449718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd84664c98739%3A0x48058057305130ce!2sAv.+Gerem%C3%A1rio+Dantas%2C+807+-+Pechincha%2C+Rio+de+Janeiro+-+RJ%2C+22743-011!5e0!3m2!1spt-PT!2sbr!4v1529071546782" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 <p><strong>Endereço:</strong><br />
 Avenida Geremário Dantas, 807. 9º andar, Sala 809.<br /> Bairro: Pechincha</p>
 <p><strong>Telefone:</strong><br />

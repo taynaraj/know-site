@@ -67,8 +67,9 @@
 	left:-24px!important
 }
 .tslider .cbp-qtcontent img {
-	float: left;
-	margin-right: 2em;
+	margin:auto;
+	display: inline-block;
+    margin-top: -5rem;
 	/*box-shadow:none;
 	border-radius:none;
 	max-width:20%;
@@ -76,6 +77,12 @@
 	border-radius:100%;
 	-moz-border-radius:100%;
 	-webkit-border-radius:100%;*/
+}
+
+@media only screen and (max-width: 990px){
+	.bx-wrapper ul li{
+		padding-top: 60px!important;
+	}
 }
 
 /** THEME
@@ -164,7 +171,7 @@
 	width: 32px;
 	height: 32px;
 	text-indent: -9999px;
-	z-index: 9999;
+	z-index: 2;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {

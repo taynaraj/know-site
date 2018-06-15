@@ -138,7 +138,7 @@ h2:before{
     background-color: #474b4a;
     height: 2px;
     width: 5%;
-    bottom: -2px;
+    bottom: -5px;
     margin: auto;
     right: 0;
     left: 0;
@@ -516,7 +516,7 @@ pre {
     height: 6.4rem;
     width: 100%;
 }
-.navbar-default.navbar-shrink .align-vertical:before{
+.navbar-default.navbar-shrink{
 	background-color: #F7941E;
 	
 }
@@ -544,7 +544,7 @@ pre {
 		display: table-cell;
 		float: none;
 		vertical-align: top;
-		padding-top: 10px;
+		padding-top: 5px;
 	}
 }
 
@@ -577,26 +577,26 @@ pre {
 
 .navbar-default .nav li a {
 	color: #000;
-	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
-	font-size: 20px;
+	font-family: "Open Sans";
+	font-size: 17px;
 	font-weight: 600;
+	text-transform: uppercase;
 	letter-spacing: 2px;
-	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
 	outline: 0;
-	color: #000;
+	color: #4e4e4e;
 
 }
 .navbar-default .nav li a:hover:before{
-	height: 3px;
-    width: 40%;
+	height: 2px;
+    width: 30%;
     content: '';
     bottom: 7px;
     position: absolute;
-    background:  #000;
+    background:  #1a1a1a;
     background-size: 600% 600%;
     transform:.8s;
 }
@@ -913,9 +913,8 @@ pre {
 	background-color:#fff
 }
 .featuredClients{
-	
 	clear: left;
-	padding:5rem 0;
+	padding:5rem 0 7rem 0;
 }
 .dark-overlay {
 	height: 630px;
@@ -3539,7 +3538,7 @@ footer *{
 }
 ul.footerLink li{text-align:left;}
 .footerLink > li a {
-	color: #868f9a;
+	color: #FFF;
 	display: inline-block;
 	line-height: 32px;
 	-webkit-transition: .4s;
@@ -3548,7 +3547,7 @@ ul.footerLink li{text-align:left;}
 }
 
 .contactInfo span a {
-	color: #868f9a;
+	color: #FFF;
 	display: block;
 	line-height: 35px;
 	-webkit-transition: .4s;
@@ -3691,9 +3690,9 @@ ul.footerLink li{text-align:left;}
 	display: none;
 }
 .bx-wrapper blockquote{
-	float: left;
 	width: 80%;
 	border:0;
+	display:inline-block;
 }
 .tslider blockquote footer:before{
 	content:'';
@@ -3719,7 +3718,7 @@ ul.footerLink li{text-align:left;}
 }
 
 .tslider .footer-testimonial:before {
-	content: '― ';
+	content: '▷ ';
 }
 
 /* Formulário de Contato */
