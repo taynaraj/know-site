@@ -43,7 +43,7 @@ if ( post_password_required() ) {
 			</span>
 		</div>
 
-		<div class="col-md-8 col-md-offset-2">
+		<div class="cotainer">
 			<ol class="commentlist">
 				<?php
 				wp_list_comments(
@@ -74,9 +74,9 @@ if ( ! comments_open() ) {
 </section><!-- #comments -->
 
 <div id="commentform">
-	<div class="container wow fadeIn"> <!-- Container -->
+	<div class="container wow fadeIn container-comment"> <!-- Container -->
 		<div class="row"> <!-- Row -->
-			<div class="col-md-10 col-md-offset-1"> <!-- 12 column grid -->
+			<div class="form-group"> <!-- 12 column grid -->
 
 				<?php
 

@@ -13,7 +13,7 @@ get_header(); ?>
 	================================================== -->
 	<?php get_sidebar(); ?>
 	<div class="blog">
-		<div class="container">
+		<div>
 			<div class="row">
 
 			<?php if ( have_posts() ) : ?>

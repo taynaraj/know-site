@@ -82,20 +82,4 @@
 
 	<!-- Blog
 	================================================== -->
-	<section id="blog" style="background-image: url('<?php header_image(); ?>');">
-	<div class="dark-overlay vision">
-		<div class="container">
-		<div class="centered vision-border wow bounceIn">
-			
-			<!--<h2><a href="<php echo esc_url( home_url( '/' ) ); ?>"><php bloginfo( 'name' ); ?></a></h2>!-->
-			<?php
-			$subheadtitle = get_theme_mod( 'rokophotolite_subhead_title', __( 'Welcome to', 'rokophoto-lite' ) );
-			if ( ! empty( $subheadtitle ) ) {
-				echo '<h4>' . $subheadtitle . '</h4>';
-			}
-			?>
-			<?/*php get_template_part( 'loop-meta' ); */?>
-		</div>
-		</div>
-	</div>
-</section>
+	

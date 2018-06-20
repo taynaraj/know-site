@@ -342,7 +342,7 @@ function signup_another_blog( $blogname = '', $blog_title = '', $errors = '' ) {
 		do_action( 'signup_hidden_fields', 'create-another-site' );
 		?>
 		<?php show_blog_form($blogname, $blog_title, $errors); ?>
-		<p class="submit"><input type="submit" name="submit" class="submit" value="<?php esc_attr_e( 'Create Site' ) ?>" /></p>
+		<p class="submit"><input type="submit" name="submit" class="submit-comment" value="<?php esc_attr_e( 'Create Site' ) ?>" /></p>
 	</form>
 	<?php
 }
@@ -561,7 +561,7 @@ function signup_user( $user_name = '', $user_email = '', $errors = '' ) {
 		<?php } ?>
 		</p>
 
-		<p class="submit"><input type="submit" name="submit" class="submit" value="<?php esc_attr_e('Next') ?>" /></p>
+		<p class="submit"><input type="submit" name="submit" class="submit-comment" value="<?php esc_attr_e('Next') ?>" /></p>
 	</form>
 	<?php
 }
@@ -675,7 +675,7 @@ function signup_blog($user_name = '', $user_email = '', $blogname = '', $blog_ti
 		do_action( 'signup_hidden_fields', 'validate-site' );
 		?>
 		<?php show_blog_form($blogname, $blog_title, $errors); ?>
-		<p class="submit"><input type="submit" name="submit" class="submit" value="<?php esc_attr_e('Signup') ?>" /></p>
+		<p class="submit"><input type="submit" name="submit" class="submit-comment" value="<?php esc_attr_e('Signup') ?>" /></p>
 	</form>
 	<?php
 }

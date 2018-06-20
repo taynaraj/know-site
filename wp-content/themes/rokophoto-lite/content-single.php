@@ -8,28 +8,43 @@
  */
 ?>
 <!-- Blog post -->
+
+<!-- Blog post real -->
+<section class="header-blog" style="background-image: url(<?php the_post_thumbnail_url('full'); ?>)">
+	<div class="dark-overlay vision">
+		<div class="container">
+		<div class="centered vision-border wow bounceIn">
+			
+			<!--<h2><a href="<php echo esc_url( home_url( '/' ) ); ?>"><php bloginfo( 'name' ); ?></a></h2>!-->
+			<h2><?php the_title(); ?></h2>
+			<?/*php get_template_part( 'loop-meta' ); */?>
+		</div>
+		</div>
+	</div>
+</section>
+
+
 <div <?php post_class( 'blog-post' ); ?> id="post-<?php the_ID(); ?>">
-	<div class="col-lg-8 col-lg-offset-2">
+
+
+	<div class="container">
 		<div class="post wow fadeIn" data-wow-duration="2s">
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<ul class="list-inline">
-				<li><?php _e( 'Post By:', 'rokophoto-lite' ); ?> <?php the_author_posts_link(); ?></li>
-				<li><?php _e( 'Date:', 'rokophoto-lite' ); ?> <time><?php the_time( get_option( 'date_format' ) ); ?></time></li>
-				<?php if ( has_category() ) : ?>
-					<li><?php _e( 'Category:', 'rokophoto-lite' ); ?> <?php the_category( ', ' ); ?></li>
-				<?php endif; ?>
-				<li><?php the_tags( 'Tags: ', ', ' ); ?></li>
-			</ul>
-			<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
-				<?php
-				the_post_thumbnail(
-					'full', array(
-						'class' => 'img-responsive',
-					)
-				);
-				?>
-			<?php endif; ?>
+			<div class="row info-author">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+					<ul class="list-author">
+						<li><?php _e( 'Publicado por:', 'rokophoto-lite' ); ?> <?php the_author_posts_link(); ?></li>
+						<li><?php _e( 'Data:', 'rokophoto-lite' ); ?> <time><?php the_time( get_option( 'date_format' ) ); ?></time></li>
+						
+					</ul>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 right alignRight">
+					<?php echo do_shortcode( '[wpusb]' );?>
+				</div>
+			</div>
+			<h2><?php the_title(); ?></h2>
+			
 			<div class="post-content">
+			
 				<?php the_content(); ?>
 				<?php wp_link_pages(); ?>
 			</div>

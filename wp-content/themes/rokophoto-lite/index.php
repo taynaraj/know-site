@@ -13,7 +13,23 @@
  */
 
 get_header(); ?>
-
+<section class="header-home" style="background-image: url('<?php header_image(); ?>');">
+	<div class="dark-overlay vision">
+		<div class="container">
+		<div class="centered vision-border wow bounceIn">
+			
+			<!--<h2><a href="<php echo esc_url( home_url( '/' ) ); ?>"><php bloginfo( 'name' ); ?></a></h2>!-->
+			<?php
+			$subheadtitle = get_theme_mod( 'rokophotolite_subhead_title', __( 'Welcome to', 'rokophoto-lite' ) );
+			if ( ! empty( $subheadtitle ) ) {
+				echo '<h4>' . $subheadtitle . '</h4>';
+			}
+			?>
+			<?/*php get_template_part( 'loop-meta' ); */?>
+		</div>
+		</div>
+	</div>
+</section>
 	<!-- Blog Posts
 	================================================== -->
 	<?php get_sidebar(); ?>
@@ -138,7 +154,7 @@ get_header(); ?>
 	<h2>Entre em Contato</h2>
 </div>
 </div>
-<div class="faleConosco">
+<div class="faleConosco form-group">
 <div class="container">
 		<div class="row">
 			
@@ -175,7 +191,7 @@ Avenida Geremário Dantas, 807. 9º andar, Sala 809.<br /> Bairro: Pechincha</p>
 			
 				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
 				<a href="<?php the_permalink(); ?>">
-					<div><?php the_post_thumbnail(); ?></div>
+					<div class="zoom"><?php the_post_thumbnail(); ?></div>
 					<h3><?php the_title(); ?></h3><br />
 					<?php the_excerpt(); ?>
 				</a>
