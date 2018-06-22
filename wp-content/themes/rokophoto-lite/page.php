@@ -13,7 +13,15 @@
  */
 
 get_header(); ?>
-
+<section class="header-home backgroundHeaderPage" style="background-image:url('<?php the_post_thumbnail_url(); ?>')" >
+   <div class="dark-overlay vision">
+      <div class="container">
+         <div class="centered vision-border wow bounceIn">
+            <h2><?php echo get_the_title(); ?></h2>
+         </div>
+      </div>
+   </div>
+</section>
 	<!-- Page
 	================================================== -->
 	<div class="blog">

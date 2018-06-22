@@ -34,8 +34,10 @@
 					<ul class="list-author">
 						<li><?php _e( 'Publicado por:', 'rokophoto-lite' ); ?> <?php the_author_posts_link(); ?></li>
 						<li><?php _e( 'Data:', 'rokophoto-lite' ); ?> <time><?php the_time( get_option( 'date_format' ) ); ?></time></li>
-						
+						<li>Categoria(s): <div class="tag-category"><?php the_category( ', ' ); ?></div></li>
 					</ul>
+
+					
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 right alignRight">
 					<?php echo do_shortcode( '[wpusb]' );?>

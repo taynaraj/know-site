@@ -10,6 +10,7 @@
 
 <!-- Blog post -->
 <div <?php post_class( 'blog-posts' ); ?> id="post-<?php the_ID(); ?>">
+
 	<div class="col-lg-8 col-lg-offset-2">
 		<div class="post wow fadeIn" data-wow-duration="2s">
 			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

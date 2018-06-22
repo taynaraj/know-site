@@ -162,9 +162,21 @@ if ( ( isset( $rokophoto_social_display_settings ) && $rokophoto_social_display_
                     <div class="widget">
                         <div class="h4">Destaques Blog</div>
                         <ul class="footerLink">
-                            <li><a href="#"></a></li>
+                          
                            
-                        </ul>
+                        
+						<?php query_posts ('cat=4&showposts=3'); if(have_posts()) : ?>
+						<?php while(have_posts())  : the_post(); ?>
+					
+					
+							<li>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_title(); ?>
+								</a>
+							</li>
+					
+						<?php endwhile; endif;?>
+						</ul>
                     </div>
                 </div>
                 <div class="col-sm-3">
