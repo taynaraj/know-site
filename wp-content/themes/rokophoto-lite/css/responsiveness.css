@@ -188,6 +188,19 @@ Updated: August 23, 2014
 	.commentlist ul {
 		margin-left: 40px;
 	}
+	.background-logo{
+		display: none;
+	}
+	.main-navigation a svg {
+		width: 12rem;
+		height: 4rem;
+	}
+	.main-navigation ul ul{
+		background: none;
+	}
+	#status{
+		width: 70%;
+	}
 }
 
 /* MAX 460px */

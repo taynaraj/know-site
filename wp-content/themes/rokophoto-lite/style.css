@@ -111,7 +111,6 @@ h5,
 h6 {
 	font-family: "Raleway", "Trebuchet MS", Arial, sans-serif;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 h1 {
@@ -976,6 +975,132 @@ pre {
 .backgroundBlog{
 	background-image:url(img/blog.jpg);
 }
+.backgroundHeaderBlog{
+	background-image:url(img/header-blog.jpg);
+	background-size:cover;
+	background-position: top;
+}
+.backgroundHeaderBlog .dark-overlay{
+	height:460px;
+	padding-top:11%;
+	background: rgba(0,0,0,0.3);
+	background-position: bottom;
+}
+.backgroundHeaderEbook{
+	background-image:url(img/header-ebook.jpg);
+	background-size:cover;
+	background-position: top;
+}
+.backgroundHeaderEbook .dark-overlay{
+	height:460px;
+	padding-top:11%;
+	background: rgba(0,0,0,0.3);
+	background-position: bottom;
+}
+.backgroundHeaderEbook h2{color:#fff;}
+#mc_embed_signup.form-group label{margin-bottom:0;    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+	text-align: left;font-family: Raleway;}
+#mc-embedded-subscribe{width:auto;margin:auto;display: block}
+#mc_embed_signup.form-group input{margin-bottom: 10px;}
+.indicates-required{font-family: Raleway;margin-bottom:10px;font-weight: 600;}
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;width:80%;margin:auto; }
+.asterisk{color:red;font-size: 19px;}
+.page-template-page_blog .navbar-default .nav li a,
+.post-template-default .navbar-default .nav li a,
+.page-template-page_ebook .navbar-default .nav li a{
+	color:#fff;
+}
+.container-blog{
+	padding: 5rem 0;
+}
+.container-blog *{
+	text-align: left;
+}
+.container-blog .image-featured{
+	position: relative;
+	padding-bottom: 15px;
+}
+.container-blog .image-featured img{
+	width: 100%;
+	height: auto;
+}
+.container-blog p{
+	font-size: 16px;
+	line-height: 1.9rem;
+}
+.container-blog a:hover{
+	text-decoration: none;
+}
+.tag-category{
+	display: table;
+    padding: .4rem 1rem;
+    color: #ffffff;
+    background-color: #535353;
+    bottom: 15px;
+    position: relative;
+}
+.tag-category a{
+	color: #fff;
+	font-size: 16px;
+}
+.list-category h2{
+	padding-bottom:25px;
+}
+.list-category h2:before{
+	display: none;
+}
+.list-category .cat-item{
+	display: table;
+    padding: .4rem 3rem;
+    color: #ffffff;
+    background-color: #535353;
+    bottom: 15px;
+    position: relative;
+}
+.list-category .cat-item{
+	margin: 5px 0;
+}
+.list-category .cat-item a{
+	color: #fff;
+	font-size: 16px;
+}
+.recents-posts{
+	padding: 30px 0;
+}
+
+.post-recent-item img{
+	width:auto;
+	height: 170px;
+}
+.post-popular-item{
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+.post-popular-item:nth-last-of-type(){
+	border:0;
+}
+.post-popular-item h4{
+	font-size: 17px;
+	padding: 0;
+	line-height: 2rem;
+	margin:0;
+}
+.post-popular-item p{
+	font-size: 14px;
+}
+h3.subtitle-page p{
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 2px dashed #c5c5c5;
+	margin-bottom: 20px;
+}
+.backgroundHeaderBlog .dark-overlay h2{
+	color:#fff;
+}
 .backgroundFeatured{
 	background-size: cover;
 	background-position: center;
@@ -1010,8 +1135,7 @@ pre {
 	text-shadow: 1px 1px 2px rgb(169, 166, 163);
 }
 .header-blog .dark-overlay {
-	background-color:rgba(255,255,255,0.3)
-
+	background: rgba(0,0,0,0.3);
 }
 .header-blog .dark-overlay{
 	height:620px;
@@ -1104,7 +1228,9 @@ pre {
 .blog-post {
 	margin-top: 5rem;
 }
-
+.blog-post h2:before{
+	display:none;
+}
 .blog-posts .post p {
 	margin-bottom: 30px;
 }
@@ -1115,6 +1241,13 @@ pre {
 .info-author{
 	border-bottom: 1px solid #ececec;
 	padding-bottom: 2rem;
+}
+.info-author .tag-category{
+	bottom: 0;
+	display:inline-block;
+}
+.info-author .tag-category a{
+	color: #fff;
 }
 .wpusb{
 	margin:0;
@@ -1178,7 +1311,39 @@ pre {
 	clear: both;
 	content: "";
 }
-
+.materiais{
+	display: block;
+}
+.materiais:hover{
+	box-shadow: 1px 1px 19px 1px #c3bebe;
+}
+.mc4wp-form-fields{
+	background-color:#F7941E;
+	padding: 10px;
+}
+#mc4wp-form-1 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #fff;
+  }
+#mc4wp-form-1 ::-moz-placeholder { /* Firefox 19+ */
+	color: #fff;
+  }
+#mc4wp-form-1 :-ms-input-placeholder { /* IE 10+ */
+	color: #fff;
+  }
+#mc4wp-form-1 :-moz-placeholder { /* Firefox 18- */
+	color: #fff;
+  }
+#mc4wp-form-1 .btn-news{
+	width: auto;
+    padding: 13px 20px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #474B4A;
+	display: block;
+}
+#mc4wp-form-1 .btn-news:hover{
+	background-color: rgb(71, 75, 74,0.7);
+}
 #bsocials {
 	float: left;
 	width: 100%;

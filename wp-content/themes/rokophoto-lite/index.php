@@ -148,6 +148,33 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<div class="backgroundFeatured backgroundBlog">
+<div class="container">
+	<h2>Destaques Blog</h2>
+</div>
+</div>
+<div class="destaques">
+	<div class="container">
+			<div class="row">
+				
+				<?php query_posts ('cat=4&showposts=3'); if(have_posts()) : ?>
+				<?php while(have_posts())  : the_post(); ?>
+               
+			
+				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+				<a href="<?php the_permalink(); ?>">
+					<div class="zoom"><?php the_post_thumbnail(); ?></div>
+					
+					<h3><?php the_title(); ?></h3><br />
+					<?php the_excerpt(); ?>
+				</a>
+				</div>
+			 
+				<?php endwhile; endif;?>
+			</div>
+			
+	</div>
+</div></div>
 <div class="backgroundContato backgroundFeatured">
 
 	<div class="container">
@@ -176,32 +203,7 @@ Avenida Geremário Dantas, 807. 9º andar, Sala 809.<br /> Bairro: Pechincha</p>
 
 </div>
 
-<div class="backgroundFeatured backgroundBlog">
-<div class="container">
-	<h2>Destaques Blog</h2>
 </div>
-</div>
-<div class="destaques">
-	<div class="container">
-			<div class="row">
-				
-				<?php query_posts ('cat=4&showposts=3'); if(have_posts()) : ?>
-				<?php while(have_posts())  : the_post(); ?>
-               
-			
-				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-				<a href="<?php the_permalink(); ?>">
-					<div class="zoom"><?php the_post_thumbnail(); ?></div>
-					<h3><?php the_title(); ?></h3><br />
-					<?php the_excerpt(); ?>
-				</a>
-				</div>
-			 
-				<?php endwhile; endif;?>
-			</div>
-			
-	</div>
-</div></div></div>
 
 
 </div>
@@ -211,3 +213,4 @@ Avenida Geremário Dantas, 807. 9º andar, Sala 809.<br /> Bairro: Pechincha</p>
 get_sidebar( 'bottom' );
 get_footer();
 ?>
+

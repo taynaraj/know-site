@@ -502,6 +502,16 @@ function get_single_template() {
 
 	return get_query_template( 'single', $templates );
 }
+function get_blog_template() {
+	$templates = array( 'page_blog.php' );
+
+	return get_query_template( 'blog', $templates );
+}
+function get_ebook_template() {
+	$templates = array( 'page_ebook.php' );
+
+	return get_query_template( 'ebook', $templates );
+}
 
 /**
  * Retrieves an embed template path in the current or parent template.
