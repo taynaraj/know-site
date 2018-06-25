@@ -43,7 +43,10 @@ $GLOBALS['post'] = new \WP_Post((object) array( 'filter' => 'raw' ));
 </head>
 <body class="page-template-default page ">
     <div id="form-preview" class="page type-page status-publish hentry post post-content">
+<<<<<<< HEAD
     
+=======
+>>>>>>> 953c7dadfdcf15a27afe0f54ee9569b1714c804b
     	<?php mc4wp_show_form( $form_id ); ?>
     </div>
 	<?php wp_footer(); ?>
