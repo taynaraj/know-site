@@ -26,6 +26,7 @@ get_header(); ?>
 	================================================== -->
 	<div class="blog">
 		<div class="container">
+		<h3 class="subtitle-page"><?php the_excerpt(); ?></h3>
 			<div class="row">
 
 			<?php if ( have_posts() ) : ?>

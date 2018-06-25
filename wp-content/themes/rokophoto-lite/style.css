@@ -322,7 +322,12 @@ pre {
 	float: left;
 	position: relative;
 }
-
+.main-navigation li li{
+	margin-bottom: 10px;
+}
+.main-navigation li li a{
+	font-weight: 400;
+}
 .main-navigation a {
 	display: block;
 	text-decoration: none;
@@ -640,11 +645,12 @@ pre {
 
 .navbar-default .nav li a {
 	color: #000;
-	font-family: "Open Sans";
-	font-size: 17px;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 16px;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
@@ -1044,7 +1050,8 @@ pre {
 .page-template-page_blog .navbar-default .nav li a,
 .post-template-default .navbar-default .nav li a,
 .page-template-page_ebook .navbar-default .nav li a,
-.page-template-default .navbar-default .nav li a{
+.page-template-default .navbar-default .nav li a,
+.category .navbar-default .nav li a{
 	color:#fff;
 }
 .container-blog{
@@ -1093,6 +1100,9 @@ pre {
     background-color: #535353;
     bottom: 15px;
     position: relative;
+}
+.list-category .cat-item:hover{
+	background-color: rgba(83,83,83, 0.8);
 }
 .list-category .cat-item{
 	margin: 5px 0;
@@ -1237,6 +1247,29 @@ h3.subtitle-page p{
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
+.category .blog .post img{
+	padding-bottom:0;
+	padding-top:0;
+}
+.category .tag-category{
+	font-size: 13px;
+	text-align:left;
+	max-width:80%;
+}
+.tag-category a:hover{
+	text-decoration: underline;
+}
+.category .category-item{
+	text-align: left;
+	border-bottom: 1px solid #cccccc;
+}
+.category .list-inline > li{
+	font-size: 15px;
+	display:block
+}
+.category .blog-posts .post p{
+font-size: 18px;
+}
 
 .videoWrapper {
 	position: relative;
@@ -1320,9 +1353,7 @@ h3.subtitle-page p{
 	border-bottom: 2px dashed #000;
 }
 
-.pagination {
-	padding-top: 80px;
-}
+
 
 .pagination > li > a,
 .pagination > li > span {
@@ -1330,14 +1361,17 @@ h3.subtitle-page p{
 	position: relative;
 	margin-left: -1px;
 	padding: 6px 12px;
-	border: 1px solid #777;
+	border: 0;
 	color: #000;
 	background-color: #fff;
 	font-size: 14px;
 	line-height: 1.42857143;
 	text-decoration: none;
 }
-
+.pagination > li:first-child > a, .pagination > li:first-child > span,
+.pagination > li:last-child > a, .pagination > li:last-child > span{
+	border-radius: 0px;
+}
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > .active > a,
@@ -1346,6 +1380,10 @@ h3.subtitle-page p{
 	border-color: #777;
 	color: #000;
 	background-color: #fec503;
+}
+.pagination > li > a:hover{
+	background-color: transparent;
+	color: #fec503;
 }
 
 .clearfix:after {
@@ -1871,7 +1909,7 @@ h2.widgettitle {
 	float: left;
 	width: 100%;
 	font-size: 14px;
-	line-height: 30px;
+	line-height: 22px;
 	list-style: none;
 }
 
@@ -3994,6 +4032,7 @@ footer *{
   font-family: fontawesome;
   margin-right: 5px;
 }
+
 
 /* Destaques páginas */
 .featured-page{

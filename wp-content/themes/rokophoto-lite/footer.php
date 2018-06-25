@@ -184,7 +184,7 @@ if ( ( isset( $rokophoto_social_display_settings ) && $rokophoto_social_display_
                         <div class="h4">Entre em Contato</div>
                         <span class="call"><a href="tel:+55213269-5594"><i class="fa fa-phone"></i>(21) 3269-5594</a></span>
                         <span class="email"><a href="mailto:contato@knowsolution.com.br"><i class="fa fa-envelope"></i>contato@knowsolution.com.br</a></span>
-                        <a href="" class="contactBtn Btn">Entre em Contato</a>
+                        <a href="<?php get_home_url(); ?>/know-site/contato" class="contactBtn Btn">Entre em Contato</a>
 
                     </div>
                 </div>

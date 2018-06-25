@@ -10,6 +10,15 @@
 get_header(); ?>
 	<!-- Blog Posts
 	================================================== -->
+	<section class="header-home backgroundHeaderBlog" >
+   <div class="dark-overlay vision">
+      <div class="container">
+         <div class="centered vision-border wow bounceIn">
+            <h2><?php echo single_cat_title(); ?></h2>
+         </div>
+      </div>
+   </div>
+</section>
 	<?php get_sidebar(); ?>
 	<div class="blog">
 		<div class="container">

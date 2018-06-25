@@ -187,7 +187,7 @@ get_header(); ?>
 			
 
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-<?php echo do_shortcode("[contact-form-7 id='85' title='Fale Conosco']"); ?>
+<?php echo do_shortcode("[contact-form-7 id='21' title='Fale Conosco']"); ?>
 </div>
 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 	<h3>Onde Estamos</h3>
