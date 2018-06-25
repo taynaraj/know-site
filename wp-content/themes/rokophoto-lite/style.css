@@ -1247,6 +1247,12 @@ h3.subtitle-page p{
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
+.blog .post .materiais img{
+	padding-top: 0;
+}
+.page-id-1059 .mc4wp-form-fields br,.page-id-1059 .subtitle-page{
+	display: none;
+}
 .category .blog .post img{
 	padding-bottom:0;
 	padding-top:0;
