@@ -33,7 +33,7 @@ var cbpAnimatedHeader = (function() {
 		if ( sy >= changeHeaderOn ) {
 			classie.add( header, 'navbar-shrink' );
 		} else {
-			classie.remove( header, 'navbar-shrink' );
+			classie.remove( header, '' );/* Colocando a classe navbar-shrink volta oe feito de menu e removendo no html do menu tb
 		}
 		didScroll = false;
 	}

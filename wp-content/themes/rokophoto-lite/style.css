@@ -159,8 +159,7 @@ h5 {
 	font-size: 14px;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased !important;
-	letter-spacing: 5px;
-	word-spacing: 10px;
+
 	text-transform: none;
 }
 
@@ -519,14 +518,14 @@ pre {
 
 }
 
-.navbar-default.navbar-shrink ul ul {
+.navbar-default ul ul {
 	background-color: #F7941E;
 	
 }
-.navbar-default.navbar-shrink ul ul.sub-menu a{
+.navbar-default ul ul.sub-menu a{
 	text-transform: none;
 }
-.navbar-default.navbar-shrink.main-navigation a svg{
+.navbar-default.main-navigation a svg{
 	height:5rem;
 }
 
@@ -673,7 +672,7 @@ pre {
     content: '';
     bottom: 7px;
     position: absolute;
-    background:  #1a1a1a;
+    background:  #fff;
     background-size: 600% 600%;
     transform:.8s;
 }
@@ -1054,6 +1053,10 @@ pre {
 .category .navbar-default .nav li a{
 	color:#fff;
 }
+
+.current-menu-item a{
+	color:#5C5D60!IMPORTANT;
+}
 .container-blog{
 	padding: 5rem 0;
 }
@@ -1143,6 +1146,9 @@ h3.subtitle-page p{
 	border-bottom: 2px dashed #c5c5c5;
 	margin-bottom: 20px;
 }
+h3.subtitle-page a{
+	color: #fec503;
+}
 .backgroundHeaderBlog .dark-overlay h2{
 	color:#fff;
 }
@@ -1209,7 +1215,35 @@ h3.subtitle-page p{
 	background: #fff;
 	text-align: center;
 }
-
+.nossa-equipe .pessoa img {
+    max-width: 100%;
+    border-radius: 100%;
+    border: 1px solid #F7941E;
+	margin-bottom: 10px;
+	padding:2px!important;
+	width:12vw;
+	margin:auto;
+}
+.nossa-equipe .pessoa .desc-pessoa {
+    text-align: center;
+    width: 100%;
+	height: 100%;
+}
+.nossa-equipe .pessoa .desc-pessoa h5{
+	margin-bottom:0;
+	font-weight: 600;
+	font-size:16px;
+}
+.nossa-equipe .pessoa .desc-pessoa p{
+	font-size:15px;
+}
+.nossa-equipe .pessoa {
+    text-align: center;
+	padding: 0 6rem 0 6rem;
+}
+.page-template-default .post .nossa-equipe p{
+	text-align: center;
+}
 .home.blog {
 	padding-bottom: 0;
 }
@@ -1765,7 +1799,6 @@ input[type='submit'].comment-submit:hover{
 	font-family: "Raleway","Trebuchet MS",Arial,sans-serif;
 	font-size: 16px;
 	line-height: 1;
-	white-space: pre-wrap;
 	text-transform: uppercase;
 }
 
@@ -4044,6 +4077,58 @@ footer *{
 .featured-page{
 	padding: 5rem 0;
 }
+.type-page .featured-page{
+	margin:auto;
+	padding: 0;
+	width: 80%;
+}
+.type-page .featured-page svg{
+	width: 9rem;
+	margin: auto;
+    display: block;
+}
+.type-page .featured-page .item-graph{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-items: center;
+	height: 15rem;
+	margin:2rem 0;
+}
+.type-page .featured-page .line-featured{
+	border-bottom:1px solid #ddd;
+	margin:2rem 0;
+	padding:2rem 0;
+	display: flex;
+}
+.type-page .featured-page .line-featured:last-of-type{
+	border:0!important;
+}
+.type-page .featured-page .item-featured{
+
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.type-page .featured-page .item-featured a{
+	color: #474b4a;
+	font-weight: 400;
+}
+.type-page .featured-page .item-featured a:hover{
+	text-decoration: none;
+	color:#F7941E;
+	transition: 0s;
+}
+.type-page .featured-page .item-featured a:hover p,
+.type-page .featured-page .item-featured a:hover h3{
+	color:#F7941E;
+}
+.type-page .featured-page .item-graph svg path,
+.type-page .featured-page .item-graph svg rect,
+.type-page .featured-page .item-graph svg polygon{
+	fill:#5C5D60;
+}
 .featured-line .item-left{
 	position: relative;
 }
@@ -4229,4 +4314,11 @@ div.wpcf7-response-output{
 	transform: scale(1.7) rotateZ(-10deg);
 	-webkit-filter:  grayscale(0%);
   	filter:  grayscale(0%);
+}
+.centerFlex{
+	margin: 0 auto !important;
+    float: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

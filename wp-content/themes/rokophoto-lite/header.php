@@ -37,7 +37,7 @@
 
 	<!-- Navigation
 	================================================== -->
-	<nav id="site-navigation" role="navigation" class="main-navigation navbar navbar-default navbar-fixed-top">
+	<nav id="site-navigation" role="navigation" class="main-navigation navbar navbar-default navbar-fixed-top navbar-shrink">
 		<div class="container">
 			<div class="align-vertical">
 				<div class="navbar-header page-scroll">

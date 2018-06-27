@@ -95,8 +95,9 @@ get_header(); ?>
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 item-right">
 				<div>
-			 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><br />
-			 <p><?php the_excerpt(); ?></div>
+				<a href="<?php the_permalink(); ?>">
+			 <h3><?php the_title(); ?></h3><br />
+			 <p><?php the_excerpt(); ?></a></div>
 </div>
            
      
@@ -112,8 +113,9 @@ get_header(); ?>
 			<div class="row featured-line">
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  item-left">
 				<div>
-			 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><br />
-			 <p><?php the_excerpt(); ?></div>
+				<a href="<?php the_permalink(); ?>">
+			 <h3><?php the_title(); ?></h3><br />
+			<?php the_excerpt(); ?></a></div>
 				
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  item-right">
@@ -183,7 +185,7 @@ get_header(); ?>
 				</div>
 			
 			<?php endwhile; endif;?>
-			<?php query_posts ('page_id=62'); if(have_posts()) : ?>
+			<?php query_posts ('page_id=112'); if(have_posts()) : ?>
              <?php while(have_posts())  : the_post(); ?>
                
 			<div class="row featured-line">
@@ -241,9 +243,9 @@ get_header(); ?>
 </svg></a>
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 item-right">
-				<div>
-			 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><br />
-			 <p><?php the_excerpt(); ?></div>
+				<div><a href="<?php the_permalink(); ?>">
+			 <h3><?php the_title(); ?></h3><br />
+			 <?php the_excerpt(); ?></a></div>
 </div>
            
      
@@ -255,7 +257,7 @@ get_header(); ?>
 			<?php endwhile; endif;?>
 	</div>
 	</div>
-	<div class="backgroundDigital backgroundFeatured">
+	<div class="backgroundDigital backgroundFeatured" id="clientes">
 
 	<div class="container">
 		
